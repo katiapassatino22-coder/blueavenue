@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9fc;
+    color: #071a33;
+}
+
+
+
+header {
+    height: 75px;
+
+    background-color: #061a35;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+Nav a:hover {
+    color: #9bb8d8;
+}
+
+.inicio {
+    height: 550px;
+
+    background:
+        linear-gradient(rgba(5, 22, 45, 0.85),
+            rgba(5, 22, 45, 0.85)),
+        url("https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 10%;
+
+    color: white;
+}
+
+.inicio-texto {
+    max-width: 600px;
+}
+
+.pequeno {
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+    color: #b9cce1;
+}
+
+
+.inicio h1 {
+    font-size: 60px;
+
+    line-height: 1.05;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.inicio-texto>p:not(.pequeno) {
+    color: #d8e2ee;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+
+    background-color: white;
+
+    color: #061a35;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.boton:hover {
+    background-color: #a9bfd7;
+
+    transform: translateY(-3px);
+}
+.ropa {
+    padding: 90px 8%;
+}
+.titulo {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.titulo p {
+    color: #54708f;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+.titulo h2 {
+    font-size: 36px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.titulo span {
+    color: #718096;
+
+    font-size: 14px;
+}
+.productos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.producto {
+    height: 500px;
+
+    position: relative;
+
+    background-color: white;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(7, 26, 51, 0.12);
+
+    cursor: pointer;
+}
+.imagen {
+    width: 100%;
+
+    height: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    z-index: 2;
+}
+
+
+.imagen img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.7s ease;
+}
+
+.producto:hover .imagen img {
+    transform: translateY(-150px);
+}
+.informacion {
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    min-height: 180px;
+
+    background-color: white;
+
+    padding: 20px;
+
+    z-index: 1;
+
+    transform: translateY(100%);
+
+    transition:
+        transform 0.7s ease;
+}
+.producto:hover .informacion {
+    transform: translateY(0);
+}
+
+
+.informacion h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.informacion p {
+    color: #65758b;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+
+.informacion strong {
+    display: block;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+    color: #061a35;
+}
+.contacto{
+padding:60px;
+text-align:center;
+background:#06152d;
+color:white;
+}
+.nosotros{
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+.elegancia{
+    width: 350px;
+    margin: auto;
+    padding: 8px;
+   background-color: #65758b;
+color: white;
+}
+.predas{
+    padding-top: 7px;
+}
+.blue{
+    padding-bottom: 17px;
+}
+.whatsappimg{
+    width: 60px;
+    position: fixed;
+    bottom: 10px;
+   right: 10px;
+   
+
+}
+.ubicacontacto{
+    margin: 40px auto ;
+    width: 90vw;
+    display: flex;
+    gap: 40px;
+}
+form{
+    padding: 10px;
+    box-shadow: 0 0 16px #17385e;
+display: flex;
+flex-direction: column;
+gap: calc(10px);
+border: none;
+
+}
